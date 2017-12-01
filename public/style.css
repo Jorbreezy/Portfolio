@@ -1,0 +1,29 @@
+body{
+  font-family: 'Lucida Sans Unicode', cursive, sans-serif;
+}
+footer{
+  background:#333333;
+	color:#f4f4f4;
+}
+
+header, .orange{
+    background-color: lightgreen;
+    padding: 20px;
+}
+.orange{
+  margin: 20px;
+}
+
+.red{
+  padding: 20px;
+}
+
+.thumbnail{
+  margin: 10px;
+}
+
+.contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
