@@ -1,194 +1,273 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Portfolio</title>
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-  </head>
-  <body>
-      <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jordan Kelly Portfolio</title>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Jordan Kelly</a>
-        </div>
+        <a class="navbar-brand" href="#">Jordan Kelly</a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Projects<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#projects">Projects<span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-    <header>
-      <center>
-        <div class="container red">
-          <div class="row">
-            <div class="col-lg-12">
-              <img class="img-responsive" src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png"/>
-              <div class="content">
-                <h1 class="name">Jordan Kelly</h1>
-                <hr />
-                <h2 class="occupation">Full Stack Developer</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </center>
-    </header>
-    <br />
-    <main>
-      <div class="container blue">
-        <center>
-          <h1>Projects</h1>
-          <hr />
-        </center>
+  <header>
+    <center>
+      <div class="container-fluid red">
         <div class="row">
-
-          <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-              <center>
-                <h3>Kiosk for School Library</h3>
-                <hr />
-              </center>
-              <a href="#">
-                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-              <center>
-                <h3>CSV to JSON Converter</h3>
-                <hr />
-              </center>
-              <a href="#">
-                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-              <center>
-                <h3>Tea and Snacks Website/App</h3>
-                <hr />
-              </center>
-              <a href="#">
-                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-              <center>
-                <h3>Rock, Paper, Scissors</h3>
-                <hr />
-              </center>
-              <a href="#">
-                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </main>
-
-    <div class="orange">
-      <div class="container">
-        <center>
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>About</h1>
+          <div class="col-lg-12">
+            <img class="img-responsive" src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" />
+            <div class="content">
+              <h1 class="name">Jordan Kelly</h1>
               <hr />
-              <p>Vestibulum venenatis massa ornare diam sagittis, eget scelerisque turpis porttitor. Sed ullamcorper porttitor accumsan. Curabitur ullamcorper porta turpis vitae rhoncus. Vivamus ut velit blandit, suscipit nibh ut, ultrices nulla. Nullam neque augue, mattis in aliquet at, consequat vel enim. Aliquam blandit felis in dui eleifend viverra. Maecenas facilisis tortor ligula, et pulvinar metus consequat eget. Curabitur nec tincidunt dolor, sed dapibus eros. In elementum ligula a massa gravida sagittis hendrerit sit amet justo. Vestibulum eu fermentum arcu, et iaculis est. Nulla scelerisque turpis non eleifend auctor. Duis id nulla ullamcorper, iaculis odio quis, accumsan dui. Integer faucibus dignissim neque, eget porttitor massa rhoncus eget. Pellentesque ultricies, magna non ullamcorper elementum, diam nisl mollis lectus, vitae cursus quam diam quis ante.</p>
-            </div>
-          </div>
-        </center>
-      </div>
-    </div>
-
-    <div class="contact">
-      <center>
-        <div class="container">
-          <h2>Contact Us</h2>
-          <p>Feel free to shout us by feeling the contact form or visiting our social network sites like Fackebook,Whatsapp,Twitter.</p>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="exampleInputName2">Name</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail2">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                </div>
-                <div class="form-group ">
-                  <label for="exampleInputText">Your Message</label>
-                  <textarea  class="form-control" placeholder="Description"></textarea> 
-                </div>
-                <button type="submit" class="btn btn-default">Send Message</button>
-              </form>
-
-              <hr>
-              <h3>Our Social Sites</h3>
-              <ul class="list-inline banner-social-buttons">
-                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-                <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
-              </ul>
+              <h2 class="occupation">Full Stack Developer</h2>
             </div>
           </div>
         </div>
+      </div>
+    </center>
+  </header>
+
+  <br />
+
+  <div id="about" class="orange">
+    <div class="container">
+      <center>
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>About</h1>
+            <hr class="style18" />
+            <p>Vestibulum venenatis massa ornare diam sagittis, eget scelerisque turpis porttitor. Sed ullamcorper porttitor accumsan. Curabitur ullamcorper porta turpis vitae rhoncus. Vivamus ut velit blandit, suscipit nibh ut, ultrices nulla. Nullam neque
+              augue, mattis in aliquet at, consequat vel enim. Aliquam blandit felis in dui eleifend viverra. Maecenas facilisis tortor ligula, et pulvinar metus consequat eget. Curabitur nec tincidunt dolor, sed dapibus eros. In elementum ligula a massa
+              gravida sagittis hendrerit sit amet justo. Vestibulum eu fermentum arcu, et iaculis est. Nulla scelerisque turpis non eleifend auctor. Duis id nulla ullamcorper, iaculis odio quis, accumsan dui. Integer faucibus dignissim neque, eget porttitor
+              massa rhoncus eget. Pellentesque ultricies, magna non ullamcorper elementum, diam nisl mollis lectus, vitae cursus quam diam quis ante.</p>
+          </div>
+        </div>
+        <hr class="style19" />
       </center>
     </div>
+  </div>
 
-    <footer>
+  <main>
+    <div id="projects" class="container-fluid blue">
+      <center>
+        <h1>Projects</h1>
+        <hr class="style20" />
+      </center>
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <center>
+              <h3>Kiosk for School Library</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <center>
+              <h3>CSV to JSON Converter</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <center>
+              <h3>Tea & Snacks Website/App</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <center>
+              <h3>Rock, Paper, Scissors</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <center>
+              <h3>Stranded</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/Stranded.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://jorbreezy.github.io/Stranded/views/');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <center>
+              <h3>Todo List</h3>
+              <hr />
+            </center>
+            <a href="#">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/designs/10585729,width=178,height=178/deadpool-what-the-icon.png" alt="img1">
+              </a>
+
+            <hr/>
+
+            <div class="caption">
+              <button class="btn btn-danger" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Github</button>
+              <button class="btn btn-primary" onclick="window.open('https://github.com/Jorbreezy/kiosk-client.git');">Live Preview</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div id="contact" class="contact">
+    <center>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h3>Contact Info</h3>
+            <hr>
+            <ul class="list-inline banner-social-buttons">
+              <li>
+                <h3>(347) - 779 - 4364</h3>
+              </li>
+              <li><span class="network-name"><h3>jordan.w.kelly@gmail.com</h3></span></li>
+              <li><a href="" class="btn btn-info btn-lg"><i class="fa fa-facebook"><span class="network-name">Linkedin</span></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <center>
         <h3>&copy; Jordan Corp</h3>
       </center>
-    </footer>
+
+    </center>
+  </div>
+
+  <script>
+    // Initialize Firebase
+    // var config = {
+    //   apiKey: "AIzaSyCEYWWHkGbhRXtIj1JScJywUK6fdd7Lt9s",
+    //   authDomain: "portfolio-144ec.firebaseapp.com",
+    //   databaseURL: "https://portfolio-144ec.firebaseio.com",
+    //   projectId: "portfolio-144ec",
+    //   storageBucket: "",
+    //   messagingSenderId: "846609821874"
+    // };
+
+    // firebase.initializeApp(config);
+
+    // var database = firebase.database();
+    // var projects_ref = database.ref('/project');
+
+    // projects_ref.once('value', function(snapshot) {
+    //   var projects = snapshot.val();
+    //   console.log(projects);
+    // });
+
+
+    // $(window).scroll(function(e) {
+    //   var $el = $('.navbar');
+    //   var isPositionFixed = ($el.css('position') == 'fixed');
+    //   if ($(this).scrollTop() > 20 && !isPositionFixed) {
+    //     $('.navbar').css({ 'position': 'fixed', 'margin-top': '0px', 'background-color': '#333333' });
+    //   }
+    //   if ($(this).scrollTop() < 20 && isPositionFixed) {
+    //     $('.navbar').css({ 'position': 'absolute','background-color': '#333333' });
+    //   }
+    // });
     
-     <script>
-       // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCEYWWHkGbhRXtIj1JScJywUK6fdd7Lt9s",
-        authDomain: "portfolio-144ec.firebaseapp.com",
-        databaseURL: "https://portfolio-144ec.firebaseio.com",
-        projectId: "portfolio-144ec",
-        storageBucket: "",
-        messagingSenderId: "846609821874"
-      };
-      
-      firebase.initializeApp(config);
+  </script>
 
-      var database = firebase.database();
-      var projects_ref = database.ref('/project');
-      
-      projects_ref.once('value', function(snapshot) {
-      	var projects = snapshot.val();
-      	console.log(projects);
-      });
+</body>
 
-    </script>
-  </body>  
 </html>
